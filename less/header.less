@@ -1,0 +1,230 @@
+header{
+    width: 100%;
+    background-image: url("../img/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav{
+        padding: 70px 0px;
+        ul{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            .md-block({
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                });
+            li{
+                margin: 0px 25px;
+                .md-block({
+                    width: 100%;
+                    padding: 0;
+                    margin: 5px 0px;
+                    margin-bottom: 20px;
+                    });
+                a{
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    color: white;
+                    &:hover{
+                        cursor: pointer;
+                        transition: 1s;
+                        color: #FF7400;
+                    }
+                }
+            }
+            button{
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                padding: 14px 19px;
+                border: none;
+                background: #FF7400;
+                color: white;   
+                margin-left: 30px; 
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+                .md-block({
+                    width: 100%;
+                    margin: 0;
+                })
+            }
+        }
+        .bars {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            color: white;
+            border: 2px solid white;
+            .fa {
+                font-size: 16px;
+            }
+            &:hover{
+                color: #FF4D01;
+                border: 2px solid #FF4D01;
+            }
+        }
+    }
+    .headerTitle{
+        width: 100%;
+        position: relative;
+        padding-top: 200px;
+        padding-bottom: 250px;
+        .box{
+            text-align: center;
+            h3{
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 57px;
+                color: #D67E35;
+                .md-block({
+                    font-size: 30px;
+                    line-height: 40px;
+                });
+                .sm-block({
+                    font-size: 18px;
+                    line-height: 25px;
+                })
+            }
+            h2{
+                font-size: 80px;
+                font-weight: 400;
+                line-height: 92px;
+                color: #D67E35;
+                margin-bottom: 12px;
+                .md-block({
+                    font-size: 40px;
+                    line-height: 50px;
+                });
+                .sm-block({
+                    font-size: 27px;
+                    line-height: 30px;
+                    margin-top: 10px;
+                })
+            }
+            span{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                color: white;  
+                .md-block({
+                    font-size: 15px;
+                });
+                .sm-block({
+                    font-size: 15px;
+                })
+
+            }
+            button{
+                padding: 14px 28px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                border: none;
+                margin-top: 22px;
+                color: white;
+                background-color:  #FF7400; 
+                .md-block({
+                   padding: 10px 24px;  
+                });
+                .sm-block({
+                 font-size: 15px;
+                 line-height: 15px;
+                 padding: 10px 20px;
+                });
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+            }
+        }
+        .headerLogin {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.96);
+            z-index: 11111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            h2.size{
+                font-size: 72px;
+                font-weight: 400;
+                line-height: 84px;
+                color: #FF4D01;
+                text-align: center;  
+                .sm-block({
+                    font-size: 40px;
+                    line-height: 45px;
+                })      
+            }
+            .box{
+                width: 100%;
+                background: #FFFFFF;
+                box-shadow: 5px 5px 20px 5px white;  
+                padding: 40px 40px;
+                margin-top: 30px;
+                text-align: center;
+                .sm-block({
+                width: 60%;
+                margin-top: 50px;
+                margin-left: 20%;
+                padding: 0px 10px;
+                });
+                h4{
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: black;  
+                    span{
+                        font-size: 26px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: #BC9060;           
+                    }
+                }
+                p{
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: #656363;
+                    margin-top: 20px;
+                }
+            }
+            .close {
+              position: absolute;
+              top: 10px;
+              right: 30px;
+              display: block;
+              border: 2px solid #FF4D01;
+              padding: 15px 20px;
+              color: white;
+              border-radius: 5px;
+              font-size: 18px;
+              transition: 0.3s;
+              cursor: pointer;
+              &:hover {
+                background-color: #FF4D01;
+                transform: rotate(180deg);
+              }
+            }
+        }
+    }
+}
